@@ -4,10 +4,16 @@ body {
     text-align: center;
     background-color: black;
     cursor: crosshair;
+
+    text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
 
 .service-image{
-    width: 80%;
+    width: 75%;
 }
 
 canvas {
@@ -22,7 +28,7 @@ h1, .h1 {
 
 
 p {
-    color: rgba(255, 255, 255, 0.5)
+    color: rgba(255, 255, 255, 0.7)
 }
 
 .header {
@@ -35,6 +41,15 @@ p {
     .header {
         /*top: 30%;*/
     }
+
+    .side-text {
+        font-size: 116px;
+    }
+}
+
+.side-text{
+    overflow: hidden;
+    font-size: 1pc;
 }
 
 .anton-regular {
@@ -56,8 +71,15 @@ p {
 
 .anton-regular h2{
     position: relative;
-    top: -14pc;
+    top: -18pc;
     font-size: 5rem;
+}
+.anton-regular p{
+    position: relative;
+    top: -17pc;
+    font-size: 1.5rem;
+
+    
 }
 
 
@@ -132,4 +154,31 @@ h2::after {
 
 .margin-simple{
     margin-top: 5pc;
+}
+}
+.reveal {
+  opacity: 0;
+  transform: translateX(100px); /* empieza fuera de la vista, a la derecha */
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateX(0); /* vuelve a su posición normal */
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* relación 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
