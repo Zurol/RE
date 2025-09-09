@@ -15,13 +15,13 @@
 
 <body>
     <!-- partial:index.partial.html -->
-    <div class="container-fluid fixed-top disable-selection">
+    <div class="container-fluid disable-selection">
         <div class="row">
-            <div class="col-md-4 anton-regular ">
+            <div class="col-md-4 anton-regular header ">
                 <div class="row">
                     <div class="col">
                         <h1>REALITY EVOLUTION</h1>
-                        <p class="small">– LIBERTAD CREATIVA QUE TE HACE ÚNICO –</p>
+                        <p class="">– LIBERTAD CREATIVA QUE TE HACE ÚNICO –</p>
                         <!--.btn.btn-danger(href='#',role='button', onclick='cameraSet()') + ADD LINE-->
                     </div>
                 </div>
@@ -29,18 +29,65 @@
             <div class="canvas-container"></div>
         </div>
     </div>
-    <div class="container-fluid fixed-top header disable-selection">
+    <div class="container-fluid margin-up">
         <div class="row">
-            <div class="col-md-8"></div>
-            <div class="col-md-4">
+            <div class="col-md-12">
+                <h2 class="side-text anton-regular">Crea de la mano de artistas y programadores</h2>
+            </div>
+            <div class="col-md-12 margin-simple">
                 <div class="row">
-                    <div class="col">
-
+                    <div class="offset-md-3 col-md-6 offset-md-3 anton-regular">
+                        <img src="images/MD.jpg" class="service-image"/>
+                    </div>
+                    <div class="offset-md-3 col-md-8 anton-regular">
+                        <h2> Creación de contenido interactivo</h2>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="offset-md-3 col-md-6">
+                        <img src="images/AU.jpg" class="service-image"/>
+                    </div>
+                    <div class="offset-md-2 col-md-8 offset-md-3 anton-regular">
+                        <h2> Desarrollo y programación</h2>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="offset-md-3 col-md-6">
+                        <img src="images/IA.jpg" class="service-image"/>
+                    </div>
+                    <div class="offset-md-2 col-md-8 offset-md-3 anton-regular">
+                        <h2> Multimedia Especializado</h2>
+                </div>
+            </div>
             </div>
         </div>
     </div>
+    <footer class="footer bg-dark text-light py-4 mt-5">
+  <div class="container">
+    <div class="row">
+      <!-- Columna izquierda -->
+      <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+        <h5 class="mb-1">Reality Evolution</h5>
+        <small>– Libertad creativa que te hace único –</small>
+      </div>
+
+      <!-- Columna derecha -->
+      <div class="col-md-6 text-center text-md-right">
+        
+      </div>
+    </div>
+
+    <hr class="bg-light">
+
+    <div class="row">
+      <div class="col text-center">
+        <small>© 2025 Reality Evolution · Todos los derechos reservados</small>
+      </div>
+    </div>
+  </div>
+</footer>
+
 
     <!--.container-fluid.fixed-bottom.footer
 .row
@@ -55,7 +102,21 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
     <script src="./script.js"></script>
+    <script>
+        const reveals = document.querySelectorAll('.reveal');
 
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+      observer.unobserve(entry.target); // para que solo se ejecute una vez
+    }
+  });
+});
+
+revels.forEach(r => observer.observe(r));
+
+    </script>
 </body>
 
 </html>

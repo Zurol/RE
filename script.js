@@ -44,6 +44,7 @@ var uSpeed = 0.001;
 //var setcolor = 0xF02050;
 //var setcolor = 0xF2F111;
 var setcolor = 0x88DF64;
+var setcolor = 0x892cdc;
 
 scene.background = new THREE.Color(setcolor);
 scene.fog = new THREE.Fog(setcolor, 10, 16);
@@ -345,7 +346,7 @@ var animate = function() {
 
     const amplitude = 0.75; // límite de rotación cubo (radianes)
     const speed = 0.02; // velocidad oscilación cubo
-    const textureSpeed = 0.01; // velocidad rotación textura
+    const textureSpeed = 1; // velocidad rotación textura
 
 
 
