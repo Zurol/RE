@@ -97,7 +97,7 @@ var Cubegeometry = new THREE.BoxGeometry(1, 1, 1);
 var createCarPos = true;
 var uSpeed = 0.001;
 
-if (dispositivo == 1) {
+if (dispositivo == 1 || dispositivo == 2) {
 	uSpeed = 0.00001;
 }
 
