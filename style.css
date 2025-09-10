@@ -1,205 +1,231 @@
 body {
-    color: white;
-    margin: 0;
-    text-align: center;
-    background-color: black;
-    cursor: crosshair;
-
-    text-shadow:
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
+	color: white;
+	margin: 0;
+	text-align: center;
+	background-color: black;
+	cursor: crosshair;
+	overflow-x: hidden;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
-.service-image{
-    width: 75%;
+.service-image {
+	width: 70%;
 }
 
 canvas {
-    display: block;
-    width: 100%;
-    height: 50%;
-    overflow: hidden;
+	display: block;
+	width: 100%;
+	height: 50%;
+	overflow: hidden;
 }
-h1, .h1 {
-    font-size: 3.5rem;
+h1,
+.h1 {
+	font-size: 3.5rem;
 }
-
 
 p {
-    color: rgba(255, 255, 255, 0.7)
+	color: rgba(255, 255, 255, 0.7);
 }
 
 .header {
-    top: 12%;
-    position: absolute;
-    
+	top: 12%;
+	position: absolute;
 }
 
 @media (min-width: 768px) {
-    .header {
-        /*top: 30%;*/
-    }
+	.header {
+		/*top: 30%;*/
+	}
 
-    .side-text {
-        font-size: 116px;
-    }
+	.side-text {
+		font-size: 116px;
+	}
 }
 
-.side-text{
-    overflow: hidden;
-    font-size: 1pc;
+.side-text {
+	overflow: hidden;
+	font-size: 1pc;
 }
 
 .anton-regular {
-    font-family: "Anton", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+	font-family: "Anton", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .header-content {
-    padding: 50px;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+	padding: 50px;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
 }
 
 .footer {
-    bottom: 3%;
+	bottom: 3%;
 }
 
-
-.anton-regular h2{
-    position: relative;
-    top: -18pc;
-    font-size: 5rem;
+.anton-regular h2 {
+	position: relative;
+	top: -18pc;
+	font-size: 5rem;
 }
-.anton-regular p{
-    position: relative;
-    top: -17pc;
-    font-size: 1.5rem;
-
-    
+.anton-regular p {
+	position: relative;
+	top: -17pc;
+	font-size: 1.5rem;
 }
-
 
 .description {
-    color: gray;
-    padding-top: 50px;
+	color: gray;
+	padding-top: 50px;
 }
 
 a,
 a:hover,
 a:visited {
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 .disable-selection {
-    -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer */
-    -khtml-user-select: none;
-    /* KHTML browsers (e.g. Konqueror) */
-    -webkit-user-select: none;
-    /* Chrome, Safari, and Opera */
-    -webkit-touch-callout: none;
-    /* Disable Android and iOS callouts*/
+	-moz-user-select: none;
+	/* Firefox */
+	-ms-user-select: none;
+	/* Internet Explorer */
+	-khtml-user-select: none;
+	/* KHTML browsers (e.g. Konqueror) */
+	-webkit-user-select: none;
+	/* Chrome, Safari, and Opera */
+	-webkit-touch-callout: none;
+	/* Disable Android and iOS callouts*/
 }
 
 h1::after {
-    /*content: ' Three JS';*/
-    font-size: 12px;
-    position: absolute;
-    top: 3px;
-    padding-left: 5px;
-    font-weight: 400;
+	/*content: ' Three JS';*/
+	font-size: 12px;
+	position: absolute;
+	top: 3px;
+	padding-left: 5px;
+	font-weight: 400;
 }
 
 h2::after {
-    
-    font-size: 12px;
-    position: absolute;
-    top: 14px;
-    padding-left: 5px;
+	font-size: 12px;
+	position: absolute;
+	top: 14px;
+	padding-left: 5px;
 }
 
 .btn {
-    border-radius: 100px;
-    padding: 10px 25px;
+	border-radius: 100px;
+	padding: 10px 25px;
 }
 
 .canvas-container {
-    overflow: hidden;
+	overflow: hidden;
 }
-
 
 .side-text {
-    opacity: 1;
-    color: rgb(225, 225, 225);
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    transform-style: preserve-3d;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 116px;
-    font-weight: 400;
-    line-height: 1.1em;
+	opacity: 1;
+	color: rgb(225, 225, 225);
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 116px;
+	font-weight: 400;
+	line-height: 1.1em;
 }
 
-.margin-up{
-    margin-top: 10pc;
+.margin-up {
+	margin-top: 10pc;
 }
 
-.margin-simple{
-    margin-top: 5pc;
+.margin-simple {
+	margin-top: 5pc;
 }
-}
+
 .reveal {
-  opacity: 0;
-  transform: translateX(100px); /* empieza fuera de la vista, a la derecha */
-  transition: all 0.8s ease;
+	opacity: 0;
+	transform: translateX(100px); /* empieza fuera de la vista, a la derecha */
+	transition: all 0.8s ease;
 }
 
 .reveal.active {
-  opacity: 1;
-  transform: translateX(0); /* vuelve a su posición normal */
+	opacity: 1;
+	transform: translateX(0); /* vuelve a su posición normal */
 }
 
 .video-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* relación 16:9 */
-  height: 0;
-  overflow: hidden;
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%; /* relación 16:9 */
+	height: 0;
+	overflow: hidden;
 }
 
 .video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
-
-.section-bar {
-    /* background-color: blueviolet; */
-}
-
 .marquee-text {
-  display: inline-block;
-  white-space: nowrap;
-  position: relative;
-  animation: marquee 15s linear infinite;
-  text-shadow: 2px 2px 4px #000; /* contorno de letra para contraste */
+	display: inline-block;
+	white-space: nowrap;
+	position: relative;
+	animation: marquee 15s linear infinite;
+	text-shadow: 2px 2px 4px #000; /* contorno de letra para contraste */
+	overflow: visible;
 }
-
-@keyframes marquee {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+@media (min-width: 768px) {
+	@keyframes marquee {
+		0% {
+			transform: translateX(100%);
+		}
+		100% {
+			transform: translateX(-100%);
+		}
+	}
 }
 
 .small-imagotype {
-    width: 5% ;
+	width: 5%;
+}
+
+@media (max-width: 768px) {
+	.marquee-text {
+		animation: none;
+		font-size: small;
+	}
+	.side-text {
+		font-size: larger;
+	}
+
+	.anton-regular h2 {
+		font-size: x-large;
+		white-space: inherit;
+	}
+
+	.anton-regular p {
+		font-size: inherit;
+	}
+
+	.margin-up {
+		margin-top: 5pc;
+	}
+
+	.margin-simple {
+		margin-top: 2pc;
+	}
+}
+
+.footer {
+	background-color: #0f1a26;
+}
+
+.contact-form {
+	background-image: url("images/footer.jpg");
+	background-size: cover;
+	background-position-y: center;
 }
