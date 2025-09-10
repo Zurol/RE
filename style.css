@@ -182,3 +182,24 @@ h2::after {
   width: 100%;
   height: 100%;
 }
+
+.section-bar {
+    /* background-color: blueviolet; */
+}
+
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  position: relative;
+  animation: marquee 15s linear infinite;
+  text-shadow: 2px 2px 4px #000; /* contorno de letra para contraste */
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.small-imagotype {
+    width: 5% ;
+}

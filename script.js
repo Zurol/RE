@@ -89,7 +89,7 @@ materials[2].map.rotation = -Math.PI / 2;
 function init() {
 
     var segments = 1;
-    for (var i = 1; i < 100; i++) {
+    for (var i = 1; i < 80; i++) {
         var geometry = new THREE.CubeGeometry(0.9, 0, 0, segments, segments, segments);
         var material = new THREE.MeshStandardMaterial({
             color: setTintColor(),
