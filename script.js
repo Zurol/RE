@@ -21,7 +21,8 @@ function getDeviceType() {
 		dispositivo = 3;
 		//return "Desktop";
 	}
-	print(dispositivo);
+	
+	
 	setRenderSize();
 }
 
