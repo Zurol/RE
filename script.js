@@ -11,6 +11,9 @@ function getDeviceType() {
 	if (width < 768) {
 		dispositivo = 1;
 		//return "Móvil";
+	} else if (width < 900) {
+		dispositivo = 2;
+		return "Móvil";
 	} else if (width < 1024) {
 		dispositivo = 2;
 		//return "Tablet";
@@ -18,6 +21,7 @@ function getDeviceType() {
 		dispositivo = 3;
 		//return "Desktop";
 	}
+	print(dispositivo);
 	setRenderSize();
 }
 
@@ -44,7 +48,6 @@ if (window.innerWidth > 800) {
 	renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 	renderer.shadowMap.needsUpdate = true;
 	//renderer.toneMapping = THREE.ReinhardToneMapping;
-	console.log(window.innerWidth);
 }
 //---
 
