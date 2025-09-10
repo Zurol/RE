@@ -199,7 +199,7 @@ h2::after {
 		font-size: small;
 	}
 	.side-text {
-		font-size: larger;
+		font-size: xx-large;
 	}
 
 	.anton-regular h2 {
@@ -217,6 +217,10 @@ h2::after {
 
 	.margin-simple {
 		margin-top: 2pc;
+	}
+
+	h3 {
+		font-size: large;
 	}
 }
 
